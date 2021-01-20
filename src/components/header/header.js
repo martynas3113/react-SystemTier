@@ -5,17 +5,19 @@ import './header.scss'
 export class Header extends Component {
     render() {
         return (
-            <Container className="header-container">
+            <Container fluid className="header-container">
                 <Row className="header-wrap">
-                    <Col lg={12} className="header-content">
+                    <Col lg={6} className="header-content">
                         <p>System tier</p>
                     </Col>
-                    <Col lg={12} className="header-nav">
+                    <Col lg={6} className="header-nav">
                         <nav className="nav-wrap">
                             <a href="#">Home</a>
                             <a href="#">Home</a>
                             <a href="#">Home</a>
                             <a href="#">Home</a>
+                            
+                            
                         </nav>
                     </Col>
                 </Row>
