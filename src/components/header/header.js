@@ -7,8 +7,16 @@ export class Header extends Component {
         return (
             <Container className="header-container">
                 <Row className="header-wrap">
-                    <Col className="header-content">
+                    <Col lg={12} className="header-content">
                         <p>System tier</p>
+                    </Col>
+                    <Col lg={12} className="header-nav">
+                        <nav className="nav-wrap">
+                            <a href="#">Home</a>
+                            <a href="#">Home</a>
+                            <a href="#">Home</a>
+                            <a href="#">Home</a>
+                        </nav>
                     </Col>
                 </Row>
             </Container>

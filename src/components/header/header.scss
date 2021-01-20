@@ -9,3 +9,14 @@
         font-weight: 600;
     }
 }
+
+.nav-wrap{
+    a{
+        padding: 15px;
+        color: #c9c9c9;
+
+        &:hover{
+            color: black;
+        }
+    }
+}
