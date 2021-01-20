@@ -1,0 +1,22 @@
+.header-container {
+    padding: 48px 0px;
+    text-align: center;
+}
+.header-content {
+    p{
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+
+.nav-wrap{
+    a{
+        padding: 15px;
+        color: #c9c9c9;
+
+        &:hover{
+            color: black;
+        }
+    }
+}
