@@ -4,6 +4,10 @@
    background-color: #0f0f49;
 }
 
+.services-wrap{
+    padding: 0 20px
+}
+
 .services-text{
     text-transform: uppercase;
     font-family: Gilroy-semibold;
@@ -85,9 +89,10 @@
     }
     .services-cards{
         display: grid;
-        grid-template-columns: repeat(1, minmax(100px, 350px));
+        grid-template-columns: repeat(1, minmax(100px, 400px));
         margin: 0;
-        padding:0
+        padding:0;
+        
     }
 
     .card{
