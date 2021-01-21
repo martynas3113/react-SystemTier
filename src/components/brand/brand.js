@@ -32,8 +32,7 @@ class Brand extends Component {
                                     color: {
                                         value: '#0f0f49'
                                     },
-                                    
-
+                                    width: 3
                                 }
                             }
                             }}/>
