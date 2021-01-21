@@ -2,8 +2,11 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+  font-family: Gilroy;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+@font-face{
+  font-family: Gilroy;
+  src:url("./components/Gilroy.otf")
 }
