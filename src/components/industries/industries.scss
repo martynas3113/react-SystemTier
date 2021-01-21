@@ -1,0 +1,65 @@
+.ind-container{
+    height: 500px;
+    padding: 120px 0;
+}
+
+.ind-right{
+    background-image: url("../img/industry-bg.jpg");
+
+}
+
+.ind-left{
+     .ind-title{
+         text-transform: uppercase;
+         font-family: Gilroy;
+         font-weight: 700;
+         font-size: 30px;
+         letter-spacing: 2.5px;
+         padding-bottom: 40px;
+         position: relative;
+         color: #0f0f49;
+
+         &::after{
+             content: "";
+             width: 50px;
+             height: 2px;
+             display: block;
+             background-color: black;
+             position: absolute;
+             left: 0;
+             bottom:0
+         }
+
+
+     }
+    .ind-list{
+        list-style: none;
+        padding: 0;
+        li{
+            margin: 10% 0;
+
+            .ind-item{
+                display: inline-block;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                font-size: 20px;
+                color: #7680a2;
+                font-weight: 600;
+                text-decoration: none;
+                padding: 5px;
+                
+
+                &:hover{
+                    background-color:  #0f0f49;
+                    color: white;
+                }
+
+            }
+        }
+    }
+}
+
+.active {
+    background-color:  #0f0f49;
+    color: white !important;
+}
