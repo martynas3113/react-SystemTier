@@ -1,0 +1,33 @@
+.services-container {
+   height: 500px;
+}
+
+.services-cards{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 200px));
+    grid-gap: 50px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    .header{
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+
+        .icon{
+            padding: 10px 10px 10px 0;
+            
+        }
+
+        h3{
+            font-size: 20px;
+            margin:0;
+        }
+    }
+}
