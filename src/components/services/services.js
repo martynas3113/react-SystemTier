@@ -7,7 +7,7 @@ class Services extends Component {
         return (
             <Container fluid className="services-container">
                 <Row className="services-wrap">
-                    <Col xl={{span:2, offset:1}} lg={12} className="services-text">
+                    <Col xl={{span:2, offset:2}} lg={12} className="services-text">
                         <h2>Services we provide</h2>
                     </Col>
                     <Col xl={8} lg={12} className="services-cards">
@@ -25,8 +25,8 @@ class Services extends Component {
                         </Card>
                         <Card className="card">
                             <Card.Header className="card-header">
-                            <img src="./images/webdev.svg" alt="web"/>
-                            <Card.Title className="card-title">Web development</Card.Title>
+                            <img src="./images/mobile.svg" alt="web"/>
+                            <Card.Title className="card-title">Mobile development</Card.Title>
                             </Card.Header>
                             <Card.Body>
                             <Card.Text>
@@ -37,8 +37,8 @@ class Services extends Component {
                         </Card>
                         <Card className="card">
                             <Card.Header className="card-header">
-                            <img src="./images/webdev.svg" alt="web"/>
-                            <Card.Title className="card-title">Web development</Card.Title>
+                            <img src="./images/consulting.svg" alt="web"/>
+                            <Card.Title className="card-title">It consulting</Card.Title>
                             </Card.Header>
                             <Card.Body>
                             <Card.Text>
@@ -49,8 +49,8 @@ class Services extends Component {
                         </Card>
                         <Card className="card">
                             <Card.Header className="card-header">
-                            <img src="./images/webdev.svg" alt="web"/>
-                            <Card.Title className="card-title">Web development</Card.Title>
+                            <img src="./images/quality.svg" alt="web"/>
+                            <Card.Title className="card-title">Quality assurance</Card.Title>
                             </Card.Header>
                             <Card.Body className="card-body">
                             <Card.Text>
@@ -61,8 +61,8 @@ class Services extends Component {
                         </Card>
                         <Card className="card">
                             <Card.Header className="card-header">
-                            <img src="./images/webdev.svg" alt="web"/>
-                            <Card.Title className="card-title">Web development</Card.Title>
+                            <img src="./images/design.svg" alt="web"/>
+                            <Card.Title className="card-title">Design solutions</Card.Title>
                             </Card.Header>
                             <Card.Body>
                             <Card.Text>

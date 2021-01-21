@@ -2,6 +2,16 @@
    padding: 50px;
 }
 
+.services-text{
+    text-transform: uppercase;
+    font-family: Gilroy-bold;
+    font-weight: 500;
+    color: #0f0f49;
+    letter-spacing: 2.7px;
+    margin-top: 10px;
+
+}
+
 .services-cards{
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 300px));
@@ -32,13 +42,15 @@
             letter-spacing: 1px;
             text-transform: uppercase;
             color: #0f0f49;
-            font-weight: 700;
             padding: 5px;
+            color: #0f0f49;
+            font-family: Gilroy-bold;
         }
 
         img{
             padding: 5px;
             width: 75px;
+            height: 75px;
             
         }
     }
@@ -83,7 +95,7 @@
         .card-header {
             justify-content: center;
             .card-title{
-                font-size: 13px;
+                font-size: 15px;
             }
 
             img{
