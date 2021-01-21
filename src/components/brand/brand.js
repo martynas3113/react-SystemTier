@@ -9,9 +9,35 @@ class Brand extends Component {
            <Container fluid className="brand-container">
                <Row className="brand-wrap">
                    <Col lg={{span:5 , offset: 1}} className="brand-particles">
-                       <Particles/>
+                        <Particles id="particles-js" height="441px"  width="100%" params={{ 
+                            particles: {
+                                number:{
+                                    value: 200,
+                                    density:{
+                                        enable: true,
+                                        value_area: 1000
+                                    }
+                                },
+                                color: {
+                                    value: '#0f0f49'
+                                },
+                                opacity: {
+                                    value: 5
+                                },
+                                size: {
+                                    value: 3,
+
+                                },
+                                line_linked: {
+                                    color: {
+                                        value: '#0f0f49'
+                                    },
+                                    width: 2
+                                }
+                            }
+                            }}/>
                    </Col>
-                   <Col lg={{span:4, offset:1}} className="brand-text">
+                   <Col lg={{span:5, offset:0}} className="brand-text">
                        
                        <p className="brand-badge">More than software</p>
                        <h2>The future</h2>

@@ -1,0 +1,113 @@
+.services-container {
+   padding: 50px;
+}
+
+.services-text{
+    text-transform: uppercase;
+    font-family: Gilroy-bold;
+    font-weight: 700;
+    color: #0f0f49;
+    letter-spacing: 2.7px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.services-cards{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 300px));
+    grid-gap: 50px;
+}
+
+.card{
+    padding:10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 8px 2px hsla(0,0%,68.6%,.45);
+    transition: all 0.5s ease-in-out;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+    .card-header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: none;
+        background-color: white;
+        max-width: 100%;
+
+        .card-title{
+            margin: 0;
+            font-size: 18px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #0f0f49;
+            padding: 5px;
+            color: #0f0f49;
+            font-family: Gilroy-bold;
+        }
+
+        img{
+            padding: 5px;
+            width: 75px;
+            height: 75px;
+            
+        }
+    }
+}
+
+@media (max-width:1200px){
+    .services-text{
+        text-align: center;
+    }
+    .services-cards{
+        justify-content: center;
+        margin: 30px;
+    }
+}
+
+@media (max-width:990px){
+    .services-cards{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 300px));
+    }
+    .services-container{
+        padding-top: 120px;
+    }
+}
+
+@media (max-width:700px){
+    .services-container{
+        padding: 0;
+        padding-top: 120px;
+    }
+    .services-cards{
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .card{
+        border-radius: 0;
+        border-bottom: 1px solid #c9c9c9;
+
+        .card-header {
+            justify-content: center;
+            .card-title{
+                font-size: 15px;
+            }
+
+            img{
+                width:50px;
+            }
+           }
+    }
+
+    .card-body {
+        display: none;
+    }
+
+
+
+}
