@@ -1,8 +1,29 @@
 .hero-bg{
     background-image: url("../img/bg.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
     height: 100vh;
+    background-repeat: no-repeat;
+    z-index: 5;
     
+}
+
+.hero-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    .hero-content{
+        color: white;
+        text-align: center;
+
+        h1{
+            font-size: 50px;
+            text-transform: uppercase;
+        }
+        p{
+            margin-top: 30px;
+            font-size: 20px;
+        }
+
+    }
 }

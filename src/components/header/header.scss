@@ -1,6 +1,6 @@
 .header-container {
     padding:20px;
-    
+    position: fixed;
 }
 
 .header-wrap{
@@ -13,6 +13,7 @@
         
         p{
             margin: 0;
+            color: white;
         }
     }
 
@@ -26,9 +27,10 @@
 
 .nav-wrap{
     text-align: center;
+    
 
     a{
         margin-right:30px;
-        color: black;
+        color: white;
     }
 }
