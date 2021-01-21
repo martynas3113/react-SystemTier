@@ -15,9 +15,7 @@ export class Header extends Component {
                             <a href="#">Home</a>
                             <a href="#">Home</a>
                             <a href="#">Home</a>
-                            <a href="#">Home</a>
-                            
-                            
+                            <a className="btn" href="#">Contact us</a>
                         </nav>
                     </Col>
                 </Row>
