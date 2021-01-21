@@ -1,13 +1,13 @@
 export const titles ={
     names:[
         "Fintech",
-        "Healtcare",
+        "Healthcare",
         "Media & Advertising",
         "Retail",
         "Education",
         "Enterprise software",
-        "Travel & Transportation",
-        "Data mining & Processing"
+        "Travel and Transportation",
+        "Data mining and Processing"
 
     ]
 }
