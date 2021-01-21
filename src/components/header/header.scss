@@ -1,9 +1,13 @@
 .header-container {
-    padding:20px;
-    position: fixed;
+    padding:30px;
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    z-index: 10;
 }
 
 .header-wrap{
+    position: sticky;
     display: flex;
     align-items: center;
 
@@ -12,6 +16,8 @@
         text-align: center;
         
         p{
+            text-transform: uppercase;
+            font-weight: 600;
             margin: 0;
             color: white;
         }
@@ -30,7 +36,22 @@
     
 
     a{
+        letter-spacing: 2px;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
         margin-right:30px;
         color: white;
+    }
+
+    .btn{
+        padding: 10px 25px;
+        background-color: white;
+        border-radius: 25px;
+        color: #111048;
+
+        &:hover{
+            background-color:rgb(220, 224, 255) ;
+        }
     }
 }
