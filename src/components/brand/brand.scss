@@ -24,13 +24,14 @@
             padding: 10px 20px;
             background-color: #0f0f49;
             color: white;
-            font-size: 30px;
+            font-size: 27px;
             font-weight: 700;
-            // width: 100%;
+            text-transform: uppercase;
+            
         }
 
         h2{
-            // width: 100%;
+            
             display: inline-block;
             font-size:70px;
             font-weight: 700;
@@ -44,7 +45,8 @@
             font-weight: 600;
             margin-top: 10px;
             margin-bottom: 30px;
-            line-height: 1.5;  
+            line-height: 1.5; 
+            letter-spacing: 1px; 
         }
 
         .brand-time{
