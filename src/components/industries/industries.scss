@@ -1,7 +1,10 @@
 .ind-container{
-    height: 500px;
-    padding: 120px 0;
-    position: relative;
+    padding: 120px 0 0 0;
+}
+
+.ind-wrap{
+    width: 100%;
+    height: 100%;
 }
 
 .ind-right{
@@ -14,7 +17,7 @@
     width: 380px;
     position: absolute;
     background-color: white;
-    right: -100px;
+    right: 0;
     top: 40%;
     padding:10px;
 
@@ -35,6 +38,7 @@
 }
 
 .ind-left{
+    
      .ind-title{
          text-transform: uppercase;
          font-family: Gilroy-semibold;
@@ -51,7 +55,7 @@
              display: block;
              background-color: black;
              position: absolute;
-             left: 0;
+             left: 45%;
              bottom:0
          }
 
@@ -60,6 +64,7 @@
     .ind-list{
         list-style: none;
         padding: 0;
+        min-height: auto;
         li{
             margin: 10% 0;
 
@@ -87,4 +92,32 @@
 .active {
     background-color:  #0f0f49;
     color: white !important;
+}
+
+@media (max-width:770px){
+    .ind-right {
+        display: none;
+    }
+    
+    .ind-left{
+        padding: 0;
+        margin-left: 20px;
+        .ind-title{
+            text-align: center;
+            font-size: 15px;
+            
+
+        }
+
+        .ind-list{
+            
+            text-align: center;
+            li{
+            .ind-item{
+                font-size: 15px ;
+            }
+        }
+    }
+    }
+    
 }

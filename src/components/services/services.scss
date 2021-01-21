@@ -1,20 +1,23 @@
 .services-container {
    padding: 50px;
+   overflow: hidden;
+   background-color: #0f0f49;
 }
 
 .services-text{
     text-transform: uppercase;
     font-family: Gilroy-semibold;
     font-weight: 700;
-    color: #0f0f49;
+    color: white;
     letter-spacing: 2.7px;
     margin-top: 10px;
     position: relative;
+    margin-bottom: 100px;
 }
 
 .services-cards{
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 300px));
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
     grid-gap: 50px;
 }
 
@@ -26,7 +29,7 @@
     transition: all 0.5s ease-in-out;
 
     &:hover{
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
     .card-header{
         display: flex;
@@ -72,20 +75,19 @@
         grid-template-columns: repeat(2, minmax(200px, 300px));
     }
     .services-container{
-        padding-top: 120px;
+        padding:120px 20px;
     }
 }
 
 @media (max-width:700px){
     .services-container{
-        padding: 0;
-        padding-top: 120px;
+
     }
     .services-cards{
-        display:flex;
-        flex-direction: column;
-        gap: 10px;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(100px, 400px));
+        margin: 0;
+        padding:0
     }
 
     .card{
