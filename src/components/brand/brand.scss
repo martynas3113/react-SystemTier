@@ -1,0 +1,59 @@
+.brand-container {
+    padding: 120px 30px;
+    // background-color: black;
+    min-height: 100vh;
+}
+
+.brand-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    .brand-particles{
+        color:#0f0f49;
+        padding: 50px;
+        background-color: blue;
+    }
+    .brand-text{
+        padding: 30px;
+        text-align: right;
+        letter-spacing: .5px;
+        
+        .brand-badge{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0f0f49;
+            color: white;
+            font-size: 30px;
+            font-weight: 700;
+            // width: 100%;
+        }
+
+        h2{
+            // width: 100%;
+            display: inline-block;
+            font-size:70px;
+            font-weight: 700;
+            color:#0f0f49;
+            text-transform: uppercase;
+            margin: 40px 0;
+        }
+
+        .brand-content{
+            color: #0f0f49;
+            font-weight: 600;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            line-height: 1.5;  
+        }
+
+        .brand-time{
+            margin-top: 30px;
+            font-size: 20px;
+            color: #0f0f49;
+            font-weight: 600;
+        }
+
+        
+    }
+}
