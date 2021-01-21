@@ -1,6 +1,5 @@
 .brand-container {
     padding: 120px 30px;
-    // background-color: black;
     min-height: 100vh;
 }
 
@@ -56,5 +55,11 @@
         }
 
         
+    }
+}
+
+@media (max-width:990px){
+    .brand-container {
+        display: none;
     }
 }
