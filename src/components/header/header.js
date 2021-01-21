@@ -5,6 +5,7 @@ import './header.scss'
 export class Header extends Component {
     render() {
         return (
+            <div className="hero-bg">
             <Container fluid className="header-container">
                 <Row className="header-wrap">
                     <Col lg={6} className="header-content">
@@ -22,6 +23,7 @@ export class Header extends Component {
                     </Col>
                 </Row>
             </Container>
+            </div>
         )
     }
 }
