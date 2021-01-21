@@ -35,7 +35,7 @@ class Brand extends Component {
                                     width: 2
                                 }
                             }
-                            }}/>
+                        }}/>
                    </Col>
                    <Col lg={{span:5, offset:0}} className="brand-text">
                        

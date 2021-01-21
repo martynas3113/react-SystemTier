@@ -41,7 +41,7 @@
 
         .card-title{
             margin: 0;
-            font-size: 18px;
+            font-size: 1em;
             letter-spacing: 1px;
             text-transform: uppercase;
             color: #0f0f49;
@@ -85,7 +85,7 @@
     }
     .services-cards{
         display: grid;
-        grid-template-columns: repeat(1, minmax(100px, 400px));
+        grid-template-columns: repeat(1, minmax(100px, 350px));
         margin: 0;
         padding:0
     }
