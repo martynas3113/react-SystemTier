@@ -32,8 +32,8 @@ class Industries extends Component {
                     </Col>
                     <Col lg={6} className="ind-right">
                        <div className="ind-sidebar">
-                           <h3>Industry Name</h3>
-                           <p>Lorem ipsum dolor sit amet.</p>
+                           <h3 className="sidebar-title">Industry Name</h3>
+                           <p className="sidebar-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nam!</p>
                        </div>
                     </Col>
                 </Row>

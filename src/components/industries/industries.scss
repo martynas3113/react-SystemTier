@@ -1,11 +1,37 @@
 .ind-container{
     height: 500px;
     padding: 120px 0;
+    position: relative;
 }
 
 .ind-right{
     background-image: url("../img/industry-bg.jpg");
+    
 
+}
+
+.ind-sidebar{
+    width: 380px;
+    position: absolute;
+    background-color: white;
+    right: -100px;
+    top: 40%;
+    padding:10px;
+
+    .sidebar-title{
+        font-family: Gilroy-semibold;
+        color:#0f0f49;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        margin-bottom: 30px;
+    }
+
+    .sidebar-text{
+        font-size: 18px;
+        letter-spacing: 3px;
+        color: #0f0f49;
+    }
+    
 }
 
 .ind-left{
