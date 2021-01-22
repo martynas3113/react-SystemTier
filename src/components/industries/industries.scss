@@ -10,6 +10,8 @@
 
 .ind-right{
     background-image: url("../img/industry-bg.jpg");
+    background-repeat: no-repeat;
+    margin-top: 76px;
     
 
 }
@@ -18,10 +20,11 @@
     max-width: 320px;
     position: absolute;
     background-color: white;
-    right: -100%;
+    right: 0;
     top: 40%;
     opacity: 1;
     padding:10px;
+    transition: all 0.5s ease-in-out;
 
     .sidebar-title{
         font-family: Gilroy-semibold;
