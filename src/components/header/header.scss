@@ -2,7 +2,14 @@
     padding:30px;
     position: fixed;
     z-index: 10;
+    background-color: transparent;
+    height: 100px;
+    transition: all 0.3s ease-in-out;
     
+}
+
+.header-container.active{
+    background-color: #111048;
 }
 
 .header-wrap{

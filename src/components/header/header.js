@@ -3,9 +3,31 @@ import { Col, Container, Row } from 'react-bootstrap'
 import './header.scss'
 
 export class Header extends Component {
+    constructor(props){
+        super(props)
+        this.state ={scroll:false}
+        this.backChange = this.backChange.bind(this);
+        window.addEventListener('scroll', this.backChange);
+
+    }
+
+    backChange(){
+        if(window.scrollY >=100){
+            this.setState({
+                scroll: true
+            });
+        }
+        else{
+            this.setState({
+                scroll: false
+            })
+        }
+    }
+    
     render() {
+        const scroll = this.state.scroll ? "header-container active" : "header-container";
         return (
-            <Container fluid className="header-container">
+            <Container fluid className={scroll}>
                 <Row className="header-wrap">
                     <Col lg={6} className="header-content">
                         <p>System tier</p>

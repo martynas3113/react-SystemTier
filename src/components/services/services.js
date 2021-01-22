@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Card, CardDeck, Col, Container, Row } from 'react-bootstrap';
+import { Card, Col, Container, Row } from 'react-bootstrap';
 import './services.scss';
 
 class Services extends Component {
