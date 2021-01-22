@@ -1,0 +1,30 @@
+import React, { Component } from 'react';
+import { Container, Row,Col } from 'react-bootstrap';
+import './burgermenu.scss';
+
+export class Burgermenu extends Component {
+    constructor(props){
+        super(props)
+    }
+    render() {
+        const toggle = this.props.click;
+        const menuOpacity = toggle ? 1 : 0;
+        const menuSlide = toggle ? 0 : -100;
+        return (
+            <Container fluid style={{opacity: menuOpacity}, {top:`${menuSlide}%`}} className="b-menu-container">
+                <Row>
+                    <Col  lg={12} className="b-menu">
+                        <nav className="b-menu-content">
+                            <a href="">Hello</a>
+                            <a href="">Hello</a>
+                            <a href="">Hello</a>
+                            <a href="">Hello</a>
+                        </nav>
+                    </Col>
+                </Row>
+            </Container>
+        )
+    }
+}
+
+export default Burgermenu

@@ -12,6 +12,31 @@
     background-color: #111048;
 }
 
+.nav-links{
+    display: flex;
+    flex-direction: row;
+}
+
+.header-contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .burger-icon-wrap{
+        font-size: 18px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 20px;
+        cursor: pointer;
+
+        p{
+            margin-right: 10px;
+        }
+    }
+
+}
+
 
 
     .header-content{
@@ -36,8 +61,6 @@
 
 .nav-wrap{
     text-align: center;
-    // display: none;
-    
 
     a{
         letter-spacing: 2px;
@@ -57,5 +80,11 @@
         &:hover{
             background-color:rgb(220, 224, 255) ;
         }
+    }
+}
+
+@media (max-width: 768px){
+    .header-contact .btn{
+        display: none;
     }
 }
