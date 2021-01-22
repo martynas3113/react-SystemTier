@@ -20,13 +20,14 @@ class Industries extends Component {
         const content = e.target.innerHTML;
         const data = e.target.id
         this.setState({
-            active: false 
+            active: false, 
         })
         setTimeout(() => {
             this.setState({
                 active:true,
                 title: content,
                 currentID: data
+                
             })
         }, 500);
     }
