@@ -9,7 +9,7 @@ import Services from './components/services/services';
 function App() {
   return (
     <div className="App">
-      
+      <Header/>
       <Hero />
       <Brand/>
       <Services/>

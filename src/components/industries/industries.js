@@ -10,7 +10,8 @@ class Industries extends Component {
         {   
             data: titles,
             title: "FINTECH",
-            currentID: 0
+            currentID: 0,
+            active: true
         }
         this.handleClick = this.handleClick.bind(this);
     }
@@ -19,16 +20,23 @@ class Industries extends Component {
         const content = e.target.innerHTML;
         const data = e.target.id
         this.setState({
-            title: content,
-            currentID: data
-            
+            active: false 
         })
+        setTimeout(() => {
+            this.setState({
+                active:true,
+                title: content,
+                currentID: data
+            })
+        }, 500);
     }
     
 
     render() {
-        console.log(this.state.currentID)
+        const opacity = this.state.active ? 1 : 0;
+        const marginRight = this.state.active ? 0 : -100;
         return (
+            
             <Container className="ind-container">
                 
                 <Row className="ind-wrap">
@@ -41,7 +49,7 @@ class Industries extends Component {
                         </ul>
                     </Col>
                     <Col lg={6} md={6} className="ind-right">
-                       <div className="ind-sidebar">
+                       <div className="ind-sidebar" style={{opacity:opacity , right:`${marginRight}%`}}>
                            <h3 className="sidebar-title">{this.state.title}</h3>
                            <p className="sidebar-text">{this.state.data.text[this.state.currentID]}</p>
                        </div>
