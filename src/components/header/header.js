@@ -1,14 +1,33 @@
-import React, { Component } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import './header.scss'
+import React, { Component } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import './header.scss';
+import { FaBars } from 'react-icons/fa'
 
 export class Header extends Component {
     constructor(props){
         super(props)
-        this.state ={scroll:false}
+        this.state ={
+            scroll:false,
+            resize: false
+        };
         this.backChange = this.backChange.bind(this);
+        this.burgerMenu = this.burgerMenu.bind(this);
         window.addEventListener('scroll', this.backChange);
+        window.addEventListener('resize', this.burgerMenu)
 
+    }
+
+    burgerMenu(){
+        if(window.innerWidth <= 990){
+            this.setState({
+                resize: true
+            });
+        }
+        else{
+            this.setState({
+                resize: false
+            });
+        }
     }
 
     backChange(){
@@ -29,17 +48,17 @@ export class Header extends Component {
         return (
             <Container fluid className={scroll}>
                 <Row className="header-wrap">
-                    <Col lg={6} className="header-content">
+                    <Col lg={{span: 10, offset:1}} className="header-content">
                         <p>System tier</p>
-                    </Col>
-                    <Col lg={6} className="header-nav">
-                        <nav className="nav-wrap">
+                        <FaBars style={this.state.resize ? {display: 'block'} : {display:'none'}} className="burger-menu" />
+                        <nav style={this.state.resize ? {display: 'none'} : {display:'block'}} className="nav-wrap">
                             <a href="#">Home</a>
                             <a href="#">Home</a>
                             <a href="#">Home</a>
                             <a className="btn" href="#">Contact us</a>
                         </nav>
                     </Col>
+                    
                 </Row>
             </Container>
         )
