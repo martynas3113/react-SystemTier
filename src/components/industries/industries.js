@@ -43,7 +43,7 @@ class Industries extends Component {
                     <Col lg={6} md={6} className="ind-right">
                        <div className="ind-sidebar">
                            <h3 className="sidebar-title">{this.state.title}</h3>
-                           <p className="sidebar-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nam!</p>
+                           <p className="sidebar-text">{this.state.data.text[this.state.currentID]}</p>
                        </div>
                     </Col>
                 </Row>
