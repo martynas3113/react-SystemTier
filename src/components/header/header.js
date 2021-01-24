@@ -58,7 +58,7 @@ export class Header extends Component {
             <Container fluid className={scroll}>
                 <Row className="header-wrap">
                     <Col lg={{span: 10, offset:1}} className="header-content">
-                    <Burgermenu click={this.state.isActive}/>
+                    <Burgermenu click={() => this.handleClick()} isOpen={this.state.isActive}/>
                         <p>System tier</p>
                         <div className="nav-links" >
                         <nav style={this.state.resize ? {display: 'none'} : {display:'block'}} className="nav-wrap">
