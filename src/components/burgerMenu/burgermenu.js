@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row,Col } from 'react-bootstrap';
 import './burgermenu.scss';
+import { AiOutlineClose } from 'react-icons/ai'
 
 export class Burgermenu extends Component {
     constructor(props){
@@ -14,6 +15,7 @@ export class Burgermenu extends Component {
             <Container fluid style={{opacity: menuOpacity}, {top:`${menuSlide}%`}} className="b-menu-container">
                 <Row>
                     <Col  lg={12} className="b-menu">
+                        <AiOutlineClose className="b-close" />
                         <nav className="b-menu-content">
                             <a href="">Hello</a>
                             <a href="">Hello</a>
