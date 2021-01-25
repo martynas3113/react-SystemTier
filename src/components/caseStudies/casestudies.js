@@ -8,7 +8,8 @@ export class CaseStudies extends Component {
         super(props);
         this.state=
         {
-            data: [caseData1,caseData2,caseData3,]
+            data: [caseData1,caseData2,caseData3,],
+            currentID : 0
         }
     }
     render() {
@@ -17,21 +18,21 @@ export class CaseStudies extends Component {
                 <h2 className="case-title">Case studies</h2>
                 <Row className="studies-wrap">
                     <Col xl={{span:3 , offset:2 }} lg={{span:4 , offset:1}} md={{span:9 , offset:2}} sm={{span:9, offset:2}} xs={{span:10, offset:1}} className="case-left">
-                        <h3 className="project-title"> FastCoinExchange</h3>
-                        <p className="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deserunt rem tenetur eum harum molestias eligendi sit autem perferendis ex?</p>
-                        <p className="project-techn">Technologies used: Python(Django), Kafka, etc.</p>
+                        <h3 className="project-title"> {this.state.data[this.state.currentID].title}</h3>
+                        <p className="project-text">{this.state.data[this.state.currentID].text}</p>
+                        <p className="project-techn">{this.state.data[this.state.currentID].technologies}</p>
                         <div className="case-stat">
-                          <p className="stat-number">5 Minutes</p>
-                          <p className="stat-text">Lorem ipsum dolor sit amet.</p>  
+                          <p className="stat-number">{this.state.data[this.state.currentID].number1}</p>
+                          <p className="stat-text">{this.state.data[this.state.currentID].number1Text}</p>  
                         </div>
                         <div className="case-stat">
-                          <p className="stat-number">5 Minutes</p>
-                          <p className="stat-text">Lorem ipsum dolor sit amet.</p>  
+                          <p className="stat-number">{this.state.data[this.state.currentID].number2}</p>
+                          <p className="stat-text">{this.state.data[this.state.currentID].number2Text}</p>  
                         </div>
                     </Col>
                     <Col xl={{span:4 , offset:1}} lg={{span:6 , offset:1}} md={{span:7 , offset:2}} sm={{span:6,offset:2}} xs={{span:10, offset:1}}  className="case-right">
                         <div className="img-holder">
-                            <img src="./images/exchange.png" alt=""/>
+                            <img src={this.state.data[this.state.currentID].img} alt=""/>
                         </div>
                     </Col>
                 </Row>
@@ -39,7 +40,7 @@ export class CaseStudies extends Component {
                     <Col xl={{offset:7}} lg={{offset:7}} md={10} xs={{span: 10,  offset:1}} className="bullet-points">
                     <div className="case-bullet">
                         {this.state.data.map((item, idx) => 
-                        <div key={idx} className="bullet"></div>)}
+                        <div id={idx} key={idx} className="bullet"></div>)}
                     </div>
                     </Col>
                 </Row>

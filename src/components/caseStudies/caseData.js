@@ -4,7 +4,7 @@
 export const caseData1 = {
 
         title: "CaseTitle",
-        img: "./images/exchange.png",
+        img: "./images/case1.png",
         text: "lorem lorem lorem",
         technologies: "Django, Kafka etc",
         number1: "Up to 5 minutes",
@@ -15,7 +15,7 @@ export const caseData1 = {
 
 export const caseData2 = {
 
-    title: "CaseTitle",
+    title: "CaseTitle2",
     img: "./images/case2.png",
     text: "lorem lorem lorem",
     technologies: "Django, Kafka etc",
@@ -27,7 +27,7 @@ export const caseData2 = {
 
 export const caseData3 = {
 
-    title: "CaseTitle",
+    title: "CaseTitle3",
     img: "./images/case3.png",
     text: "lorem lorem lorem",
     technologies: "Django, Kafka etc",
