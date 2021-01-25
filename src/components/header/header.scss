@@ -89,3 +89,11 @@
         display: none;
     }
 }
+
+@media(max-width:468px){
+    .header-content{
+        p{
+            font-size: 0.8em;
+        }
+    }
+}
