@@ -8,7 +8,7 @@ export class CaseStudies extends Component {
             <Container fluid className="studies-container">
                 <h2 className="case-title">Case studies</h2>
                 <Row className="studies-wrap">
-                    <Col xl={{span:3 , offset:2 }} lg={{span:4 , offset:1}} md={{span:9 , offset:2}} sm={{span:9, offset:2}} xs={{span:9, offset:1}} className="case-left">
+                    <Col xl={{span:3 , offset:2 }} lg={{span:4 , offset:1}} md={{span:9 , offset:2}} sm={{span:9, offset:2}} xs={{span:10, offset:1}} className="case-left">
                         <h3 className="project-title"> FastCoinExchange</h3>
                         <p className="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deserunt rem tenetur eum harum molestias eligendi sit autem perferendis ex?</p>
                         <p className="project-techn">Technologies used: Python(Django), Kafka, etc.</p>
@@ -29,7 +29,7 @@ export class CaseStudies extends Component {
                    
                 </Row>
                 <Row className="bullet-wrap">
-                    <Col xl={{offset:7}} lg={{offset:7}} md={12} xs={{span: 8,  offset:1}} className="bullet-points">
+                    <Col xl={{offset:7}} lg={{offset:7}} md={10} xs={{span: 10,  offset:1}} className="bullet-points">
                     <div className="case-bullet">
                         <div className="bullet"></div>
                         <div className="bullet"></div>
