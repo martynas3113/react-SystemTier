@@ -38,8 +38,9 @@ class Brand extends Component {
                         }}/>
                    </Col>
                    <Col lg={{span:5, offset:0}} className="brand-text">
-                       
-                       <p className="brand-badge">More than software</p>
+                       <div className="brand-badge"
+                       ><p className="brand-badge-text">More than software</p>
+                       </div>
                        <h2>The future</h2>
                        <p className="brand-content">To help our clients fulfill their business goals, our software development process can include consulting, market research, design services, product viability analysis, and a lot more.</p>
                        <p className="brand-time">Top-Quality Solutions Since 2006</p>

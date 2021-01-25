@@ -12,11 +12,14 @@
         padding: 50px;
     }
     .brand-text{
+        display: flex;
+        flex-direction: column;
         padding: 30px;
         text-align: right;
         letter-spacing: .5px;
         
         .brand-badge{
+            .brand-badge-text {
             display: inline-block;
             padding: 10px 20px;
             background-color: #0f0f49;
@@ -24,6 +27,7 @@
             font-size: 27px;
             font-weight: 700;
             text-transform: uppercase;
+            }
             
         }
 
