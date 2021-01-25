@@ -1,5 +1,5 @@
 .contact-bg{
-    min-height: 70vh ;
+    height: 100vh ;
    background-color: #0f0f49;
    text-align: center;
    padding: 120px 0;
@@ -8,8 +8,12 @@
 
 .contact-container{
     padding: 0 20px;
-    background-color: #0f0f49;
+    background-color: transparent;
     width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .contact-title{
     color: white;
@@ -46,7 +50,7 @@
     height: 50%;
     position: absolute;
     width: 100%;
-    top:30%;
+    top:40%;
     left: 0;
     z-index: 0;
     background-repeat: no-repeat;
