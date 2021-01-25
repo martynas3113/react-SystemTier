@@ -40,6 +40,7 @@
 
 .case-left{
     padding-top: 30px;
+    transform: scale(1.2);
     .project-title{
         font-family: Gilroy-semibold;
         margin-bottom: 25px;
@@ -120,6 +121,10 @@
     }
     .case-bullet{
         justify-content: center;
+    }
+
+    .case-left{
+        transform: scale(1);
     }
 }
 
