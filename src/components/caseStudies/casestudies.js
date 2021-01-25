@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
 import './casestudies.scss';
 import { Col, Container, Row } from 'react-bootstrap';
+import { caseData1,caseData2,caseData3 } from './caseData';
 
 export class CaseStudies extends Component {
+    constructor(props){
+        super(props);
+        this.state=
+        {
+            data: [caseData1,caseData2,caseData3,]
+        }
+    }
     render() {
         return (
             <Container fluid className="studies-container">
@@ -26,14 +34,12 @@ export class CaseStudies extends Component {
                             <img src="./images/exchange.png" alt=""/>
                         </div>
                     </Col>
-                   
                 </Row>
                 <Row className="bullet-wrap">
                     <Col xl={{offset:7}} lg={{offset:7}} md={10} xs={{span: 10,  offset:1}} className="bullet-points">
                     <div className="case-bullet">
-                        <div className="bullet"></div>
-                        <div className="bullet"></div>
-                        <div className="bullet"></div>
+                        {this.state.data.map((item, idx) => 
+                        <div key={idx} className="bullet"></div>)}
                     </div>
                     </Col>
                 </Row>
@@ -42,4 +48,10 @@ export class CaseStudies extends Component {
     }
 }
 
+
+{/* <div className="case-bullet">
+<div className="bullet"></div>
+<div className="bullet"></div>
+<div className="bullet"></div>
+</div> */}
 export default CaseStudies
