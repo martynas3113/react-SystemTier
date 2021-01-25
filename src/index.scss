@@ -5,7 +5,20 @@ body {
   font-family: Gilroy;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  
 }
+
+.btn{
+  padding: 10px 25px;
+  background-color: white;
+  border-radius: 25px;
+  color: #111048;
+
+  &:hover{
+      background-color:rgb(220, 224, 255) ;
+  }
+  }
 @font-face{
   font-family: Gilroy;
   src:url("./components/Gilroy.otf")
