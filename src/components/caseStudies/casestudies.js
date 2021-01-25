@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './casestudies.scss';
 import { Col, Container, Row } from 'react-bootstrap';
 import { caseData1,caseData2,caseData3 } from './caseData';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+
+
 
 export class CaseStudies extends Component {
     constructor(props){
@@ -11,6 +14,14 @@ export class CaseStudies extends Component {
             data: [caseData1,caseData2,caseData3,],
             currentID : 0
         }
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick(e){
+        const id = e.target.id;
+        this.setState({
+            currentID: id
+        })
     }
     render() {
         return (
@@ -30,6 +41,7 @@ export class CaseStudies extends Component {
                           <p className="stat-text">{this.state.data[this.state.currentID].number2Text}</p>  
                         </div>
                     </Col>
+                    
                     <Col xl={{span:4 , offset:1}} lg={{span:6 , offset:1}} md={{span:7 , offset:2}} sm={{span:6,offset:2}} xs={{span:10, offset:1}}  className="case-right">
                         <div className="img-holder">
                             <img src={this.state.data[this.state.currentID].img} alt=""/>
@@ -40,7 +52,7 @@ export class CaseStudies extends Component {
                     <Col xl={{offset:7}} lg={{offset:7}} md={10} xs={{span: 10,  offset:1}} className="bullet-points">
                     <div className="case-bullet">
                         {this.state.data.map((item, idx) => 
-                        <div id={idx} key={idx} className="bullet"></div>)}
+                        <div onClick={this.handleClick} id={idx} key={idx} className={this.state.currentID == idx ? "bullet active" : "bullet"}></div>)}
                     </div>
                     </Col>
                 </Row>

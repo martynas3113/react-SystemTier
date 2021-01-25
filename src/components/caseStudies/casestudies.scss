@@ -2,13 +2,15 @@
     background-color:#111048 ;
     padding: 120px 25px;
     color: white;
+    
 }
+
 
 .case-title{
     text-align: center;
     font-size: 2em;
     text-transform: uppercase;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
     font-family: Gilroy-semibold;
     letter-spacing: 3px;
 }
@@ -22,14 +24,17 @@
     display: flex;
     align-items: center;
     
+    
 }
 
 .img-holder{
-
+    transition: .3s;
     img{
         object-fit: contain;
         width: 100%;
         max-width: 100%;
+        opacity: 1;
+        transition: .3s;
     }
 }
 
@@ -52,11 +57,13 @@
         display: inline-block;
         width: 46%;
         
+        
 
         .stat-number{
             padding:0;
             color:#4ac68a;
             font-size: 1.2em;
+            
         }
 
         .stat-text{
@@ -77,7 +84,7 @@
 }
 
 .bullet-wrap{
-    margin-top:7%
+    margin-top:4%
     
 }
 .case-bullet{
@@ -87,13 +94,19 @@
     .bullet{
         width: 100%;
         display: inline-block;
-        width: 50px;
-        height: 3px;
-        background-color: #959595;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid #959595;
+
         &:hover{
             background-color: white;
             cursor: pointer;
         }
+    }
+
+    .active{
+        background-color: white;
     }
 }
 
@@ -118,7 +131,13 @@
     .case-title{
         margin-bottom: 30%;
     }
+
+    .bullet-wrap{
+        margin-top: 8%;
+    }
 }
+
+
 
 
  
