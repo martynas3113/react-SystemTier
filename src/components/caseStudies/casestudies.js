@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './casestudies.scss';
 import { Col, Container, Row } from 'react-bootstrap';
 import { caseData1,caseData2,caseData3 } from './caseData';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+
 
 
 
