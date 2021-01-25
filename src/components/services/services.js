@@ -7,10 +7,10 @@ class Services extends Component {
         return (
             <Container fluid className="services-container">
                 <Row className="services-wrap">
-                    <Col xl={{span:2, offset:2}} lg={12} className="services-text">
+                    <Col xl={{span:2, offset:1}} lg={12} className="services-text">
                         <h2>Services we provide</h2>
                     </Col>
-                    <Col xl={8} lg={12} s={12} xs={12} className="services-cards">
+                    <Col xl={9} lg={12} s={12} xs={12} className="services-cards">
                         <Card className="card">
                             <Card.Header className="card-header">
                             <img src="./images/webdev.svg" alt="web"/>
