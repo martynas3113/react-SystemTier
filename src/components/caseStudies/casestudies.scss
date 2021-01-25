@@ -18,8 +18,10 @@
     margin-right: auto;
 }
 
-.case-left{
-    width: 100%;
+.case-right{
+    display: flex;
+    align-items: center;
+    
 }
 
 .img-holder{
@@ -32,8 +34,8 @@
 }
 
 .case-left{
+    padding-top: 30px;
     .project-title{
-        font-size: 3em;
         font-family: Gilroy-semibold;
         margin-bottom: 25px;
     }
@@ -64,6 +66,7 @@
 
         &:first-of-type{
             border-right: 1px solid white;
+            padding-right: 7%;
         }
 
         &:last-child{
@@ -73,3 +76,44 @@
     }
 }
 
+.bullet-wrap{
+    margin-top:7%
+    
+}
+.case-bullet{
+    display: flex;
+    gap: 10px;
+    
+    .bullet{
+        display: inline-block;
+        width: 50px;
+        height: 3px;
+        background-color: #c9c9c9;
+    }
+}
+
+@media (max-width: 990px) {
+    .studies-wrap{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .case-left {
+        margin-top: 7%;
+    }
+    .case-bullet{
+        justify-content: center;
+    }
+}
+
+@media (max-width:576px){
+    .case-left{
+        padding:0;
+        text-align: center;
+    }
+    .case-title{
+        margin-bottom: 30%;
+    }
+}
+
+
+ 
