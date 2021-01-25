@@ -1,0 +1,75 @@
+.studies-container {
+    background-color:#111048 ;
+    padding: 120px 25px;
+    color: white;
+}
+
+.case-title{
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 10%;
+    font-family: Gilroy-semibold;
+    letter-spacing: 3px;
+}
+
+.studies-wrap {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.case-left{
+    width: 100%;
+}
+
+.img-holder{
+
+    img{
+        object-fit: contain;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.case-left{
+    .project-title{
+        font-size: 3em;
+        font-family: Gilroy-semibold;
+        margin-bottom: 25px;
+    }
+    .project-text{
+        color: hsla(0,0%,100%,.66);
+    }
+
+    .project-techn{
+        letter-spacing: 1px;
+        margin: 2.8em 0 3em;
+    }
+
+    .case-stat{
+        display: inline-block;
+        width: 46%;
+        
+
+        .stat-number{
+            padding:0;
+            color:#4ac68a;
+            font-size: 1.2em;
+        }
+
+        .stat-text{
+            font-size: .8em;
+            color:#8787a7;
+        }
+
+        &:first-of-type{
+            border-right: 1px solid white;
+        }
+
+        &:last-child{
+            padding-left: 7%;
+        }
+
+    }
+}
+
