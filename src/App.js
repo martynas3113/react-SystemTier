@@ -3,6 +3,7 @@ import './App.scss';
 import Brand from './components/brand/brand';
 import CaseStudies from './components/caseStudies/casestudies';
 import Contact from './components/contact/contact';
+import Footer from './components/footer/footer';
 import Header from './components/header/header';
 import Hero from './components/hero/hero';
 import Industries from './components/industries/industries';
@@ -18,6 +19,7 @@ function App() {
       <Industries/>
       <CaseStudies/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }
